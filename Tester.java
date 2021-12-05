@@ -31,9 +31,11 @@ public class Tester
             ++wordCount;
             System.out.print(word + " ");
             word = word.toLowerCase();
-
+            
             //now process word and lineNum here
-
+            wordInTree = new WordCount(word);
+            t.insertBST(wordInTree);
+            //System.out.println("Added to BST: " + t.toString());
 
 
             if (wordCount % WordsPerLine == 0) {
@@ -47,6 +49,6 @@ public class Tester
         System.out.println();
 
         //print bst in alpha order
-        System.out.println(t.toString());
+        //System.out.println(t.toString());
     }
 }

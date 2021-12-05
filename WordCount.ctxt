@@ -2,6 +2,10 @@
 comment0.target=WordCount
 comment1.params=other
 comment1.target=int\ compareTo(WordCount)
-comment2.params=line
-comment2.target=void\ addLine(int)
-numComments=3
+comment2.params=
+comment2.target=WordCount()
+comment3.params=word
+comment3.target=WordCount(java.lang.String)
+comment4.params=line
+comment4.target=void\ addLine(int)
+numComments=5

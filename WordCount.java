@@ -11,7 +11,16 @@ public class WordCount implements Comparable<WordCount>
     }
 
     //write your WordCount methods here. Javadoc comments required
-
+    public WordCount () 
+    {
+        word = null;
+    }
+    
+    public WordCount (String word)
+    {
+        this.word = word;
+    }
+    
     public void addLine(int line)
     {
         lineNums.append(line);
