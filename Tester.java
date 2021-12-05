@@ -34,11 +34,13 @@ public class Tester
 
             //now process word and lineNum here
 
-            
-            
+
+
             if (wordCount % WordsPerLine == 0) {
                 ++lineNum;
                 System.out.printf("\n%3d:  ", lineNum);
+                // add LineNum to circular array
+                countLine.addLine(lineNum);
             }
         }
         //EOF
