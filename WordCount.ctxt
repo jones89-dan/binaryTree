@@ -2,4 +2,6 @@
 comment0.target=WordCount
 comment1.params=other
 comment1.target=int\ compareTo(WordCount)
-numComments=2
+comment2.params=line
+comment2.target=void\ addLine(int)
+numComments=3

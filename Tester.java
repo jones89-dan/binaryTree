@@ -15,7 +15,7 @@ public class Tester
         String word; //read from input file
         WordCount wordToFind;  //search for this in the bst
         WordCount wordInTree;  //found in the bst
-
+        WordCount countLine = new WordCount();
         //create generic BST, of WordCount here
         BSTree<WordCount> t = new BSTree<WordCount>();
 
