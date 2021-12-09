@@ -41,10 +41,10 @@ public class Tester
             //System.out.println("Added to BST: " + wordInTree.toString());
             
             if(check != null) {
-                wordInTree.count = 1;
+                wordInTree.count = +1;
             }
             else {
-                wordInTree.count += 1;
+                wordInTree.count = 1;
             }
                 
                 System.out.println(wordInTree.toString());
