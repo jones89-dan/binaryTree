@@ -19,12 +19,18 @@ public class WordCount implements Comparable<WordCount>
     public WordCount (String word)
     {
         this.word = word;
+        count = 0;
     }
     
     public void addLine(int line)
     {
         lineNums.append(line);
-        System.out.println("Added line: " + lineNums.toString());
+        //System.out.println("Added line: " + lineNums.toString());
     }
-
+    
+    public String toString()
+    {
+        String output = "check: " + this.word + " " + count;
+        return  output;    
+    }
 }

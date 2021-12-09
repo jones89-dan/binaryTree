@@ -18,6 +18,7 @@ public class Tester
         WordCount countLine = new WordCount();
         //create generic BST, of WordCount here
         BSTree<WordCount> t = new BSTree<WordCount>();
+        WordCount check = new WordCount();
 
         //want to read word at a time from input file
         Scanner wordsIn = new Scanner(new File("Hamlet.txt"));
@@ -33,16 +34,28 @@ public class Tester
             word = word.toLowerCase();
             
             //now process word and lineNum here
+            
             wordInTree = new WordCount(word);
             t.insertBST(wordInTree);
-            //System.out.println("Added to BST: " + t.toString());
+            check = t.find(wordInTree);
+            //System.out.println("Added to BST: " + wordInTree.toString());
+            
+            if(check != null) {
+                wordInTree.count = 1;
+            }
+            else {
+                wordInTree.count += 1;
+            }
+                
+                System.out.println(wordInTree.toString());
 
 
             if (wordCount % WordsPerLine == 0) {
                 ++lineNum;
                 System.out.printf("\n%3d:  ", lineNum);
+
                 // add LineNum to circular array
-                countLine.addLine(lineNum);
+                wordInTree.addLine(lineNum);
             }
         }
         //EOF
