@@ -38,10 +38,13 @@ public class Tester
             wordInTree = new WordCount(word);
             t.insertBST(wordInTree);
             check = t.find(wordInTree);
-            //System.out.println("Added to BST: " + wordInTree.toString());
+            String checkWord = check.word;
             
-            if(check != null) {
-                wordInTree.count = +1;
+            //System.out.println("Added to BST: " + wordInTree.toString());
+            System.out.println("Check item in BST " + checkWord);
+            
+            if (word.equals(checkWord) == true) {
+                wordInTree.increaseCount();
             }
             else {
                 wordInTree.count = 1;

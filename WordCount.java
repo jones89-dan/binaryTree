@@ -28,6 +28,16 @@ public class WordCount implements Comparable<WordCount>
         //System.out.println("Added line: " + lineNums.toString());
     }
     
+    public void increaseCount()
+    {
+        count += 1;
+    }
+    
+    public String getWord()
+    {
+        return this.word;
+    }
+    
     public String toString()
     {
         String output = "check: " + this.word + " " + count;
