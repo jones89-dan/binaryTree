@@ -36,6 +36,7 @@ public class Tester
             //now process word and lineNum here
             
             wordInTree = new WordCount(word);
+            wordInTree.addLine(lineNum);
             //check = t.find(wordInTree);
             //t.insertBST(wordInTree);
             //String checkWord = check.word;
@@ -57,13 +58,12 @@ public class Tester
             if (wordCount % WordsPerLine == 0) {
                 ++lineNum;
                 System.out.printf("\n%3d:  ", lineNum);
-
                 // add LineNum to circular array
-                wordInTree.addLine(lineNum);
             }
         }
         //EOF
         System.out.println();
+        System.out.println("***************************");
         System.out.println(t.toString());
         //print bst in alpha order
         //System.out.println(t.toString());

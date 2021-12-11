@@ -28,7 +28,7 @@ public class CircularList
     
     //write a new method here that returns the info of the last item in the list
     //Javadoc comment required
-    
+
 
     public String toString()
     {
