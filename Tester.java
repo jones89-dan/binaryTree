@@ -36,21 +36,22 @@ public class Tester
             //now process word and lineNum here
             
             wordInTree = new WordCount(word);
-            t.insertBST(wordInTree);
-            check = t.find(wordInTree);
-            String checkWord = check.word;
+            //check = t.find(wordInTree);
+            //t.insertBST(wordInTree);
+            //String checkWord = check.word;
             
             //System.out.println("Added to BST: " + wordInTree.toString());
-            System.out.println("Check item in BST " + checkWord);
+            //System.out.println(" Item is in BST " + checkWord);
             
-            if (word.equals(checkWord) == true) {
+            if (t.find(wordInTree) == null ) {
+                
+                t.insertBST(wordInTree);
                 wordInTree.increaseCount();
             }
             else {
-                wordInTree.count = 1;
+                check = t.find(wordInTree);
+                check.increaseCount();
             }
-                
-                System.out.println(wordInTree.toString());
 
 
             if (wordCount % WordsPerLine == 0) {
@@ -63,7 +64,7 @@ public class Tester
         }
         //EOF
         System.out.println();
-
+        System.out.println(t.toString());
         //print bst in alpha order
         //System.out.println(t.toString());
     }

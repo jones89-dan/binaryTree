@@ -33,7 +33,7 @@ public class BSTree<E extends Comparable> implements BSTreeInterface<E>
                 lag.right = newNode;
         }
         
-        //System.out.println("Added to BST: " + newNode.toString());
+        System.out.println("Added to BST: " + newNode.toString());
     }
 
     public E find(E obj)

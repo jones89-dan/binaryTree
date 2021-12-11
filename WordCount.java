@@ -30,7 +30,7 @@ public class WordCount implements Comparable<WordCount>
     
     public void increaseCount()
     {
-        count += 1;
+        this.count += 1;
     }
     
     public String getWord()
@@ -40,7 +40,7 @@ public class WordCount implements Comparable<WordCount>
     
     public String toString()
     {
-        String output = "check: " + this.word + " " + count;
+        String output = "Word: " + this.word + " Count: " + count;
         return  output;    
     }
 }
