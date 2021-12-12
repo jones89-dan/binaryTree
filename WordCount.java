@@ -4,7 +4,7 @@ public class WordCount implements Comparable<WordCount>
     protected int count;
     protected CircularList lineNums = new CircularList ();
     protected int lineNum;
-
+    int lastLine = 0;
     //required for class to compile
     public int compareTo(WordCount other)
     {
@@ -26,9 +26,11 @@ public class WordCount implements Comparable<WordCount>
     
     public void addLine(int line)
     {
-        lineNums.append(line);
-        lineNum = line;
-        //System.out.println("Added line: " + lineNums.toString());
+        if (lastLine != line)
+        {
+            lineNums.append(line);
+            lastLine = line;
+        }
     }
     
     public void increaseCount()
@@ -36,14 +38,29 @@ public class WordCount implements Comparable<WordCount>
         this.count += 1;
     }
     
+    public String getLineNums()
+    {
+        return lineNums.toString();
+    }
+    
     public String getWord()
     {
         return this.word;
     }
     
+    public void checkList()
+    {       
+        lineNums.removeLast();
+    }
+    
+    public boolean emptyList()
+    {
+        return lineNums.isEmpty();
+    }
+    
     public String toString()
     {
-        String output = "Word: " + this.word + " Count: " + count + " Line: " + lineNums;
-        return  output;    
+        String output = "Word: " + this.word + ", Count: " + count + ", Lines: " + lineNums.toString();
+        return  output; 
     }
 }

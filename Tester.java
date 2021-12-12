@@ -52,6 +52,7 @@ public class Tester
             else {
                 check = t.find(wordInTree);
                 check.increaseCount();
+                check.addLine(lineNum);
             }
 
 
@@ -64,6 +65,7 @@ public class Tester
         //EOF
         System.out.println();
         System.out.println("***************************");
+        System.out.println("Word         Count  Line numbers");
         System.out.println(t.toString());
         //print bst in alpha order
         //System.out.println(t.toString());
