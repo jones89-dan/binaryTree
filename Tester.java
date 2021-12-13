@@ -37,6 +37,7 @@ public class Tester
             
             wordInTree = new WordCount(word);
             wordInTree.addLine(lineNum);
+            
             //check = t.find(wordInTree);
             //t.insertBST(wordInTree);
             //String checkWord = check.word;
@@ -64,9 +65,11 @@ public class Tester
         }
         //EOF
         System.out.println();
-        System.out.println("***************************");
-        System.out.println("Word         Count  Line numbers");
+        System.out.println("********************************");
+        System.out.println("Word     Count      Line numbers");
+        System.out.println("********************************");
         System.out.println(t.toString());
+    
         //print bst in alpha order
         //System.out.println(t.toString());
     }
