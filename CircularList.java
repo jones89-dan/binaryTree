@@ -27,7 +27,13 @@ public class CircularList
 
     //write a new method here that returns the info of the last item in the list
     //Javadoc comment required
-    public void removeLast()
+    
+    /**
+    * Gets the last Item from the end of the list. 
+    * 
+    * @return last.info - The last line number added to the list.
+    */
+    public int getLast()
     {
         Item r = list;
         
@@ -40,8 +46,9 @@ public class CircularList
             r = r.next;
         } 
         
-        // remove last item
-        r.next = null;
+        // gets the last item
+        Item last = r.next;
+        return last.info;
     }
 
     public String toString()

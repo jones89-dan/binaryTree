@@ -33,15 +33,21 @@ public class Tester
             System.out.print(word + " ");
             word = word.toLowerCase();
             
-            //now process word and lineNum here
+            // now process word and lineNum here
+            // create new WordCount object
             wordInTree = new WordCount(word);
+            
+            // add first line to CircularList
             wordInTree.addLine(lineNum);
             
+            // add word to the BST if word is not in the hast table
             if(ht.find(word) != true) {
+                // if word is not in the tree add word and update count
                 if (t.find(wordInTree) == null ) {
                     t.insertBST(wordInTree);
                     wordInTree.increaseCount();
                 }
+                // if word is in the BST find and updated the existing object count & line number
                 else {
                     check = t.find(wordInTree);
                     check.increaseCount();
@@ -49,18 +55,20 @@ public class Tester
                 }
             }
             
+            // checks words per line and creates new line when limit is reached
             if (wordCount % WordsPerLine == 0) {
                 ++lineNum;
                 System.out.printf("\n%3d:  ", lineNum);
-                // add LineNum to circular array
             }
         }
         //EOF
+        
+        // output for BST and header/padding
         System.out.println();
         System.out.println("********************************");
         System.out.println("Word     Count      Line numbers");
         System.out.println("********************************");
-        //print bst in alpha order
+        // print bst in alpha order
         System.out.println(t.toString());
     }
 }

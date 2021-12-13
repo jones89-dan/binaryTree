@@ -1,0 +1,108 @@
+Number of collisions building the table: 12
+0 null
+1 now
+2 have
+3 on
+4 every
+5 had
+6 null
+7 null
+8 null
+9 for
+10 after
+11 which
+12 and
+13 from
+14 the
+15 null
+16 null
+17 is
+18 to
+19 null
+20 null
+21 because
+22 so
+23 were
+24 all
+25 its
+26 in
+27 there
+28 their
+29 with
+
+  1:  To be or not to be that is the question 
+  2:  Whether tis nobler in the mind to suffer The slings 
+  3:  and arrows of outrageous fortune Or to take arms against 
+  4:  a sea of troubles And by opposing end them To 
+  5:  die to sleep No more and by a sleep to 
+  6:  say we end The heart ache and the thousand natural 
+  7:  shocks That flesh is heir to tis a consummation Devoutly 
+  8:  to be wish'd To die to sleep To sleep perchance 
+  9:  to dream ay there's the rub For in that sleep 
+ 10:  of death what dreams may come When we have shuffled 
+ 11:  off this mortal coil Must give us pause There's the 
+ 12:  respect That makes calamity of so long life For who 
+ 13:  would bear the whips and scorns of time Th' oppressor's 
+ 14:  wrong the proud man's contumely The pangs of despised love 
+ 15:  the law's delay The insolence of office and the spurns 
+ 16:  That patient merit of th' unworthy takes When he himself 
+ 17:  might his quietus make With a bare bodkin who would 
+ 18:  fardels bear To grunt and sweat under a weary life 
+ 19:  But that the dread of something after death The undiscover'd 
+ 20:  country from whose bourn No traveller returns puzzles the will 
+ 21:  And makes us rather bear those ills we have Than 
+ 22:  fly to others that we know not of Thus conscience 
+ 23:  does make cowards of us all And thus the native 
+ 24:  hue of resolution Is sicklied o'er with the pale cast 
+ 25:  of thought And enterprises of great pith and moment With 
+ 26:  this regard their currents turn awry And lose the name 
+ 27:  of action 
+********************************
+Word     Count      Line numbers
+********************************
+Word: against, Count: 1, Lines: 3
+Word: awry, Count: 1, Lines: 26
+Word: be, Count: 3, Lines: 1, 8
+Word: bear, Count: 3, Lines: 13, 18, 21
+Word: calamity, Count: 1, Lines: 12
+Word: cast, Count: 1, Lines: 24
+Word: come, Count: 1, Lines: 10
+Word: consummation, Count: 1, Lines: 7
+Word: country, Count: 1, Lines: 20
+Word: cowards, Count: 1, Lines: 23
+Word: currents, Count: 1, Lines: 26
+Word: die, Count: 2, Lines: 5, 8
+Word: dream, Count: 1, Lines: 9
+Word: enterprises, Count: 1, Lines: 25
+Word: fardels, Count: 1, Lines: 18
+Word: flesh, Count: 1, Lines: 7
+Word: fly, Count: 1, Lines: 22
+Word: fortune, Count: 1, Lines: 3
+Word: heart, Count: 1, Lines: 6
+Word: himself, Count: 1, Lines: 16
+Word: his, Count: 1, Lines: 17
+Word: hue, Count: 1, Lines: 24
+Word: insolence, Count: 1, Lines: 15
+Word: make, Count: 2, Lines: 17, 23
+Word: name, Count: 1, Lines: 26
+Word: natural, Count: 1, Lines: 6
+Word: not, Count: 2, Lines: 1, 22
+Word: opposing, Count: 1, Lines: 4
+Word: or, Count: 2, Lines: 1, 3
+Word: pale, Count: 1, Lines: 24
+Word: patient, Count: 1, Lines: 16
+Word: perchance, Count: 1, Lines: 8
+Word: returns, Count: 1, Lines: 20
+Word: say, Count: 1, Lines: 6
+Word: sea, Count: 1, Lines: 4
+Word: shuffled, Count: 1, Lines: 10
+Word: th', Count: 2, Lines: 13, 16
+Word: this, Count: 2, Lines: 11, 26
+Word: time, Count: 1, Lines: 13
+Word: traveller, Count: 1, Lines: 20
+Word: us, Count: 3, Lines: 11, 21, 23
+Word: weary, Count: 1, Lines: 18
+Word: whips, Count: 1, Lines: 13
+Word: will, Count: 1, Lines: 20
+Word: would, Count: 2, Lines: 13, 17
+

@@ -12,11 +12,21 @@ public class WordCount implements Comparable<WordCount>
     }
 
     //write your WordCount methods here. Javadoc comments required
+    
+    /**
+    * Contstructor for a WordCount object. 
+    * 
+    */
     public WordCount () 
     {
         word = null;
     }
     
+    /**
+    * Overloaded contstructor for a complex WordCount object.
+    * 
+    * @param word - word for the WordCount object.
+    */
     public WordCount (String word)
     {
         this.word = word;
@@ -24,8 +34,14 @@ public class WordCount implements Comparable<WordCount>
         lineNum = 0;
     }
     
+    /**
+    * Adds line to the Circular List and filters out duplicate line entries.
+    * 
+    * @param line - line to append to the Circular List.
+    */
     public void addLine(int line)
     {
+        // check for duplicate line before adding
         if (lastLine != line)
         {
             lineNums.append(line);
@@ -33,31 +49,20 @@ public class WordCount implements Comparable<WordCount>
         }
     }
     
+    /**
+    * Increases the count of the WordCount object.
+    * 
+    */
     public void increaseCount()
     {
         this.count += 1;
     }
     
-    public String getLineNums()
-    {
-        return lineNums.toString();
-    }
-    
-    public String getWord()
-    {
-        return this.word;
-    }
-    
-    public void checkList()
-    {       
-        lineNums.removeLast();
-    }
-    
-    public boolean emptyList()
-    {
-        return lineNums.isEmpty();
-    }
-    
+    /**
+    * Formats the WordCount object for string output. 
+    * 
+    * @return output - WordCount object formated to string.
+    */
     public String toString()
     {
         String output = "Word: " + this.word + ", Count: " + count + ", Lines: " + lineNums.toString();
