@@ -34,29 +34,21 @@ public class Tester
             word = word.toLowerCase();
             
             //now process word and lineNum here
-            
             wordInTree = new WordCount(word);
             wordInTree.addLine(lineNum);
             
-            //check = t.find(wordInTree);
-            //t.insertBST(wordInTree);
-            //String checkWord = check.word;
-            
-            //System.out.println("Added to BST: " + wordInTree.toString());
-            //System.out.println(" Item is in BST " + checkWord);
-            
-            if (t.find(wordInTree) == null ) {
-                
-                t.insertBST(wordInTree);
-                wordInTree.increaseCount();
+            if(ht.find(word) != true) {
+                if (t.find(wordInTree) == null ) {
+                    t.insertBST(wordInTree);
+                    wordInTree.increaseCount();
+                }
+                else {
+                    check = t.find(wordInTree);
+                    check.increaseCount();
+                    check.addLine(lineNum);
+                }
             }
-            else {
-                check = t.find(wordInTree);
-                check.increaseCount();
-                check.addLine(lineNum);
-            }
-
-
+            
             if (wordCount % WordsPerLine == 0) {
                 ++lineNum;
                 System.out.printf("\n%3d:  ", lineNum);
@@ -68,9 +60,7 @@ public class Tester
         System.out.println("********************************");
         System.out.println("Word     Count      Line numbers");
         System.out.println("********************************");
-        System.out.println(t.toString());
-    
         //print bst in alpha order
-        //System.out.println(t.toString());
+        System.out.println(t.toString());
     }
 }

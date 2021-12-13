@@ -25,7 +25,6 @@ public class CircularList
         list = r;
     }
 
-    
     //write a new method here that returns the info of the last item in the list
     //Javadoc comment required
     public void removeLast()
